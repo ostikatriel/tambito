@@ -20,7 +20,8 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/assets/store2.svg",
+              "src/assets",
+              "src/assets/icons/store3.svg",
               "src/manifest.webmanifest"
             ],
             "styles": [
