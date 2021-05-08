@@ -10,6 +10,10 @@ npm install @angular/animations --save
 npm install @angular/cdk --save
 npm install primeflex --save
 
+## Icons
+
+https://www.svgrepo.com/svg/215154/store
+
 ## Deploy GitHub Pages
 #### INFO https://www.npmjs.com/package/angular-cli-ghpages
 #### ng deploy
