@@ -2,48 +2,64 @@ import { Component } from '@angular/core';
 import { Product } from './domains/product';
 import { ProductService } from './services/product.service';
 
-import {SelectItem} from 'primeng/api';
+import { SelectItem } from 'primeng/api';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./dataviewdemo.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./dataviewdemo.scss']
 })
 export class AppComponent {
 
-  title = 'tambito';
+    title = 'tambito';
 
-  products: Product[];
+    products: Product[];
 
-  sortOptions: SelectItem[];
+    sortOptions: SelectItem[];
 
-  sortKey: string;
-  
-  sortOrder: number;
+    sortKey: string;
 
-  sortField: string;
+    sortOrder: number;
 
-  constructor(private productService: ProductService) { }
+    sortField: string;
 
-  ngOnInit() {
-      this.productService.getProducts().then(data => this.products = data);
+    constructor(private productService: ProductService) { }
 
-      this.sortOptions = [
-          {label: 'Precio alto a bajo', value: '!price'},
-          {label: 'Precio bajo a alto', value: 'price'}
-      ];
-  }
-  
-  onSortChange(event) {
-      let value = event.value;
+    ngOnInit() {
+        //this.productService.getProducts().then(data => this.products = data);
 
-      if (value.indexOf('!') === 0) {
-          this.sortOrder = -1;
-          this.sortField = value.substring(1, value.length);
-      }
-      else {
-          this.sortOrder = 1;
-          this.sortField = value;
-      }
-  }
+        this.products = [
+            {
+                "id": "1000",
+                "code": "f230fh0g3",
+                "name": "Leche Gloria",
+                "description": "Product Description",
+                "image": "leche1.jpg",
+                "price": 3.50,
+                "category": "Lacteos",
+                "quantity": 24,
+                "inventoryStatus": "ENSTOCK",
+                "rating": 5
+            }
+        ]
+
+
+        this.sortOptions = [
+            { label: 'Precio alto a bajo', value: '!price' },
+            { label: 'Precio bajo a alto', value: 'price' }
+        ];
+    }
+
+    onSortChange(event) {
+        let value = event.value;
+
+        if (value.indexOf('!') === 0) {
+            this.sortOrder = -1;
+            this.sortField = value.substring(1, value.length);
+        }
+        else {
+            this.sortOrder = 1;
+            this.sortField = value;
+        }
+    }
 }
