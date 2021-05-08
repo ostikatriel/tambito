@@ -10,6 +10,11 @@ npm install @angular/animations --save
 npm install @angular/cdk --save
 npm install primeflex --save
 
+## Deploy GitHub Pages
+#### INFO https://www.npmjs.com/package/angular-cli-ghpages
+#### ng deploy
+#### PAGE https://ostikatriel.github.io/tambito/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
