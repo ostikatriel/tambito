@@ -29,8 +29,8 @@ export class AppComponent {
       this.productService.getProducts().then(data => this.products = data);
 
       this.sortOptions = [
-          {label: 'Price High to Low', value: '!price'},
-          {label: 'Price Low to High', value: 'price'}
+          {label: 'Precio alto a bajo', value: '!price'},
+          {label: 'Precio bajo a alto', value: 'price'}
       ];
   }
   

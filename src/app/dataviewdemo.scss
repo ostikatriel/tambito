@@ -1,6 +1,10 @@
 :host ::ng-deep {
     .p-dropdown {
-        width: 14rem;
+        width: 16rem;
+        font-weight: normal;
+    }
+    input{
+        width: 16rem;
         font-weight: normal;
     }
     
@@ -94,20 +98,19 @@
         font-size: 12px;
         letter-spacing: .3px;
     }
-    .product-badge.status-lowstock {
+    .product-badge.status-stockbajo {
         background: #feedaf;
         color: #8a5340;
     }
-    .product-badge.status-instock {
+    .product-badge.status-enstock {
         background: #c8e6c9;
         color: #256029;
     }
-    .product-badge.status-outofstock {
+    .product-badge.status-agotado {
         background: #ffcdd2;
         color: #c63737;
     }
 }
-
 
 
 @media screen and (max-width: 576px) {
@@ -141,4 +144,10 @@
 			width: 100%;
 		}
 	}
+    .mobileOf{
+        display: none;
+    }
+    input{
+        width: 100%;
+    }
 }
