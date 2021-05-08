@@ -72,7 +72,7 @@
         }
     
         img {
-            width: 75%;
+            width: 150px;//width: 75%;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
             margin: 2rem 0;
         }
@@ -85,6 +85,26 @@
             font-size: 1.5rem;
             font-weight: 600;
         }
+    }
+    .product-badge {
+        border-radius: 2px;
+        padding: .25em .5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: .3px;
+    }
+    .product-badge.status-lowstock {
+        background: #feedaf;
+        color: #8a5340;
+    }
+    .product-badge.status-instock {
+        background: #c8e6c9;
+        color: #256029;
+    }
+    .product-badge.status-outofstock {
+        background: #ffcdd2;
+        color: #c63737;
     }
 }
 

@@ -17,6 +17,8 @@ export class AppComponent {
 
   sortOptions: SelectItem[];
 
+  sortKey: string;
+  
   sortOrder: number;
 
   sortField: string;
