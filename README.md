@@ -16,7 +16,7 @@ https://www.svgrepo.com/svg/215154/store
 
 ## Deploy GitHub Pages
 #### INFO https://www.npmjs.com/package/angular-cli-ghpages
-#### ng deploy
+### ng deploy --base-href=/tambito/
 #### PAGE https://ostikatriel.github.io/tambito/
 
 ## Development server

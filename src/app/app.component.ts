@@ -26,23 +26,23 @@ export class AppComponent {
     constructor(private productService: ProductService) { }
 
     ngOnInit() {
-        //this.productService.getProducts().then(data => this.products = data);
-
-        this.products = [
-            {
-                "id": "1000",
-                "code": "f230fh0g3",
-                "name": "Leche Gloria",
-                "description": "Product Description",
-                "image": "leche1.jpg",
-                "price": 3.50,
-                "category": "Lacteos",
-                "quantity": 24,
-                "inventoryStatus": "ENSTOCK",
-                "rating": 5
-            }
-        ]
-
+        this.productService.getProducts().then(data => this.products = data);
+        /*
+                this.products = [
+                    {
+                        "id": "1000",
+                        "code": "f230fh0g3",
+                        "name": "Leche Gloria",
+                        "description": "Product Description",
+                        "image": "leche1.jpg",
+                        "price": 3.50,
+                        "category": "Lacteos",
+                        "quantity": 24,
+                        "inventoryStatus": "ENSTOCK",
+                        "rating": 5
+                    }
+                ]
+        */
 
         this.sortOptions = [
             { label: 'Precio alto a bajo', value: '!price' },
