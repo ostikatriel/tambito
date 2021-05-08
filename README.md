@@ -12,7 +12,8 @@ npm install primeflex --save
 
 ## Icons
 
-https://www.svgrepo.com/svg/215154/store
+#### https://www.svgrepo.com/svg/215154/store
+#### https://iconarchive.com/
 
 ## Deploy GitHub Pages
 #### INFO https://www.npmjs.com/package/angular-cli-ghpages
