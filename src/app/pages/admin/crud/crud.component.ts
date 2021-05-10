@@ -17,6 +17,26 @@ import exportFromJSON from 'export-from-json';
       margin: 0 auto 2rem auto;
       display: block;
   }
+  .product-badge {
+        border-radius: 2px;
+        padding: .25em .5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: .3px;
+    }
+    .product-badge.status-stockbajo {
+        background: #feedaf;
+        color: #8a5340;
+    }
+    .product-badge.status-enstock {
+        background: #c8e6c9;
+        color: #256029;
+    }
+    .product-badge.status-agotado {
+        background: #ffcdd2;
+        color: #c63737;
+    }
 `]
 })
 export class CrudComponent implements OnInit {
@@ -59,13 +79,13 @@ export class CrudComponent implements OnInit {
 
     deleteSelectedProducts() {
         this.confirmationService.confirm({
-            message: 'Are you sure you want to delete the selected products?',
-            header: 'Confirm',
+            message: '¿Está seguro de que desea eliminar los productos seleccionados?',
+            header: 'Confirmar',
             icon: 'pi pi-exclamation-triangle',
             accept: () => {
                 this.products = this.products.filter(val => !this.selectedProducts.includes(val));
                 this.selectedProducts = null;
-                this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Products Deleted', life: 3000 });
+                this.messageService.add({ severity: 'success', summary: 'Exitoso', detail: 'Productos eliminados', life: 3000 });
             }
         });
     }
@@ -77,13 +97,13 @@ export class CrudComponent implements OnInit {
 
     deleteProduct(product: Product) {
         this.confirmationService.confirm({
-            message: 'Are you sure you want to delete ' + product.name + '?',
-            header: 'Confirm',
+            message: '¿Estás seguro de que quieres eliminar? ' + product.name + '?',
+            header: 'Confirmar',
             icon: 'pi pi-exclamation-triangle',
             accept: () => {
                 this.products = this.products.filter(val => val.id !== product.id);
                 this.product = {};
-                this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Product Deleted', life: 3000 });
+                this.messageService.add({ severity: 'success', summary: 'Exitoso', detail: 'Producto eliminado', life: 3000 });
             }
         });
     }
@@ -99,7 +119,7 @@ export class CrudComponent implements OnInit {
         if (this.product.name.trim()) {
             if (this.product.id) {
                 this.products[this.findIndexById(this.product.id)] = this.product;
-                this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Product Updated', life: 3000 });
+                this.messageService.add({ severity: 'success', summary: 'Exitoso', detail: 'Producto Actualizado', life: 3000 });
             }
             else {
                 this.product.id = this.createId();
@@ -107,7 +127,7 @@ export class CrudComponent implements OnInit {
                 this.product.rating = 5;
                 this.product.image = 'product-placeholder.svg';
                 this.products.push(this.product);
-                this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Product Created', life: 3000 });
+                this.messageService.add({ severity: 'success', summary: 'Exitoso', detail: 'Producto Creado', life: 3000 });
             }
 
             this.products = [...this.products];
@@ -156,9 +176,9 @@ export class CrudComponent implements OnInit {
     ir() {
         this.router.navigateByUrl('').then(e => {
             if (e) {
-                console.log("Navigation is successful!");
+                console.log("La navegación es exitosa!");
             } else {
-                console.log("Navigation has failed!");
+                console.log("La navegación ha fallado!");
             }
         });
     }

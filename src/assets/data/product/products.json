@@ -23,6 +23,18 @@
             "code": "Xv09k",
             "rating": 5,
             "image": "product-placeholder.svg"
+        },
+        {
+            "name": "Cielo",
+            "description": "Agua",
+            "inventoryStatus": "enstock",
+            "price": 1,
+            "quantity": 20,
+            "category": "Fitness",
+            "id": "bWQBO",
+            "code": "fioQ7",
+            "rating": 5,
+            "image": "product-placeholder.svg"
         }
     ]
 }
