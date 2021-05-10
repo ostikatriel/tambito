@@ -8,8 +8,10 @@
         </ng-template>
 
         <ng-template pTemplate="right">
-            <p-fileUpload mode="basic" accept="image/*" [maxFileSize]="1000000" label="Import" chooseLabel="Import" class="p-mr-2 p-d-inline-block"></p-fileUpload>
-            <button pButton pRipple label="Ir a Tambito" icon="pi pi-upload" class="p-button-help" (click)="redirect()"></button>
+            <!--<p-fileUpload mode="basic" accept="image/*" [maxFileSize]="1000000" label="Import" chooseLabel="Import" class="p-mr-2 p-d-inline-block"></p-fileUpload>-->
+            
+            <button pButton pRipple label="Export" icon="pi pi-upload" class="p-mr-2 p-d-inline-block" (click)="export()"></button>
+            <button pButton pRipple label="Ir a Tambito" icon="pi pi-external-link" class="p-button-help" (click)="ir()"></button>
         </ng-template>
     </p-toolbar>
 
@@ -46,7 +48,7 @@
                 </td>
                 <td>{{product.name}}</td>
                 <td><img [src]="'assets/images/product/' + product.image" [alt]="product.name" width="100" class="p-shadow-4" /></td>
-                <td>{{product.price | currency:'USD'}}</td>
+                <td>{{product.price | currency:'S/ '}}</td>
                 <td>{{product.category}}</td>
                 <td><p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false"></p-rating></td>
                 <td><span [class]="'product-badge status-' + (product.inventoryStatus ? product.inventoryStatus.toLowerCase() : '')">{{product.inventoryStatus}}</span></td>

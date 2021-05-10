@@ -6,10 +6,12 @@ import { MessageService } from 'primeng/api';
 import { Product } from 'src/app/domains/product';
 import { ProductService } from 'src/app/services/product.service';
 
+import exportFromJSON from 'export-from-json'
+
 @Component({
-  selector: 'app-crud',
-  templateUrl: './crud.component.html',
-  styles: [`
+    selector: 'app-crud',
+    templateUrl: './crud.component.html',
+    styles: [`
   :host ::ng-deep .p-dialog .product-image {
       width: 150px;
       margin: 0 auto 2rem auto;
@@ -19,128 +21,146 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class CrudComponent implements OnInit {
 
-  productDialog: boolean;
+    productDialog: boolean;
 
-  products: Product[];
+    products: Product[];
 
-  product: Product;
+    product: Product;
 
-  selectedProducts: Product[];
+    selectedProducts: Product[];
 
-  submitted: boolean;
+    submitted: boolean;
 
-  statuses: any[];
+    statuses: any[];
 
-  constructor(
-      private productService: ProductService, 
-      private messageService: MessageService, 
-      private confirmationService: ConfirmationService,
-      private router:Router,
-      ) { }
+    constructor(
+        private productService: ProductService,
+        private messageService: MessageService,
+        private confirmationService: ConfirmationService,
+        private router: Router,
+    ) { }
 
-  ngOnInit() {
-      
-      this.productService.getProducts().then(data => this.products = data);
-        
-      this.statuses = [
-          {label: 'ENSTOCK', value: 'enstock'},
-          {label: 'STOCKBAJO', value: 'stockbajo'},
-          {label: 'AGOTADO', value: 'agotado'}
-      ];
-  }
+    ngOnInit() {
 
-  openNew() {
-      this.product = {};
-      this.submitted = false;
-      this.productDialog = true;
-  }
+        this.productService.getProducts().then(data => this.products = data);
 
-  deleteSelectedProducts() {
-      this.confirmationService.confirm({
-          message: 'Are you sure you want to delete the selected products?',
-          header: 'Confirm',
-          icon: 'pi pi-exclamation-triangle',
-          accept: () => {
-            this.products = this.products.filter(val => !this.selectedProducts.includes(val));
-            this.selectedProducts = null;
-            this.messageService.add({severity:'success', summary: 'Successful', detail: 'Products Deleted', life: 3000});
-          }
-      });
-  }
+        this.statuses = [
+            { label: 'ENSTOCK', value: 'enstock' },
+            { label: 'STOCKBAJO', value: 'stockbajo' },
+            { label: 'AGOTADO', value: 'agotado' }
+        ];
+    }
 
-  editProduct(product: Product) {
-      this.product = {...product};
-      this.productDialog = true;
-  }
+    openNew() {
+        this.product = {};
+        this.submitted = false;
+        this.productDialog = true;
+    }
 
-  deleteProduct(product: Product) {
-      this.confirmationService.confirm({
-          message: 'Are you sure you want to delete ' + product.name + '?',
-          header: 'Confirm',
-          icon: 'pi pi-exclamation-triangle',
-          accept: () => {
-            this.products = this.products.filter(val => val.id !== product.id);
-              this.product = {};
-              this.messageService.add({severity:'success', summary: 'Successful', detail: 'Product Deleted', life: 3000});
-          }
-      });
-  }
+    deleteSelectedProducts() {
+        this.confirmationService.confirm({
+            message: 'Are you sure you want to delete the selected products?',
+            header: 'Confirm',
+            icon: 'pi pi-exclamation-triangle',
+            accept: () => {
+                this.products = this.products.filter(val => !this.selectedProducts.includes(val));
+                this.selectedProducts = null;
+                this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Products Deleted', life: 3000 });
+            }
+        });
+    }
 
-  hideDialog() {
-      this.productDialog = false;
-      this.submitted = false;
-  }
-  
-  saveProduct() {
-      this.submitted = true;
+    editProduct(product: Product) {
+        this.product = { ...product };
+        this.productDialog = true;
+    }
 
-      if (this.product.name.trim()) {
-          if (this.product.id) {
-            this.products[this.findIndexById(this.product.id)] = this.product;                
-              this.messageService.add({severity:'success', summary: 'Successful', detail: 'Product Updated', life: 3000});
-          }
-          else {
-              this.product.id = this.createId();
-              this.product.image = 'product-placeholder.svg';
-              this.products.push(this.product);
-              this.messageService.add({severity:'success', summary: 'Successful', detail: 'Product Created', life: 3000});
-          }
+    deleteProduct(product: Product) {
+        this.confirmationService.confirm({
+            message: 'Are you sure you want to delete ' + product.name + '?',
+            header: 'Confirm',
+            icon: 'pi pi-exclamation-triangle',
+            accept: () => {
+                this.products = this.products.filter(val => val.id !== product.id);
+                this.product = {};
+                this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Product Deleted', life: 3000 });
+            }
+        });
+    }
 
-          this.products = [...this.products];
-          this.productDialog = false;
-          this.product = {};
-      }
-  }
+    hideDialog() {
+        this.productDialog = false;
+        this.submitted = false;
+    }
 
-  findIndexById(id: string): number {
-      let index = -1;
-      for (let i = 0; i < this.products.length; i++) {
-          if (this.products[i].id === id) {
-              index = i;
-              break;
-          }
-      }
+    saveProduct() {
+        this.submitted = true;
 
-      return index;
-  }
+        if (this.product.name.trim()) {
+            if (this.product.id) {
+                this.products[this.findIndexById(this.product.id)] = this.product;
+                this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Product Updated', life: 3000 });
+            }
+            else {
+                this.product.id = this.createId();
+                this.product.code=this.createId();
+                this.product.rating=5;
+                this.product.image = 'product-placeholder.svg';
+                this.products.push(this.product);
+                this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Product Created', life: 3000 });
+            }
 
-  createId(): string {
-      let id = '';
-      var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-      for ( var i = 0; i < 5; i++ ) {
-          id += chars.charAt(Math.floor(Math.random() * chars.length));
-      }
-      return id;
-  }
-
-  redirect(){
-    this.router.navigateByUrl('').then(e => {
-        if (e) {
-          console.log("Navigation is successful!");
-        } else {
-          console.log("Navigation has failed!");
+            this.products = [...this.products];
+            this.productDialog = false;
+            this.product = {};
         }
-      });
-  }
+    }
+
+    findIndexById(id: string): number {
+        let index = -1;
+        for (let i = 0; i < this.products.length; i++) {
+            if (this.products[i].id === id) {
+                index = i;
+                break;
+            }
+        }
+
+        return index;
+    }
+
+    createId(): string {
+        let id = '';
+        var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        for (var i = 0; i < 5; i++) {
+            id += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        return id;
+    }
+
+    export() {
+
+        const data = {
+            "data": this.products
+        }
+        //const data = this.products;
+        //const data = [{ foo: 'foo'}, { bar: 'bar' }];
+        const fileName = 'products';
+        const exportType = 'json';
+
+        const fields = '';//bug
+
+        exportFromJSON({ data, fileName, exportType, fields })
+
+    }
+
+    ir() {
+        this.router.navigateByUrl('').then(e => {
+            if (e) {
+                console.log("Navigation is successful!");
+            } else {
+                console.log("Navigation has failed!");
+            }
+        });
+    }
 
 }
