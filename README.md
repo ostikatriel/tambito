@@ -20,6 +20,9 @@ npm install primeflex --save
 ### ng deploy --base-href=/tambito/
 #### PAGE https://ostikatriel.github.io/tambito/
 
+## Chrome
+#### chrome://apps
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

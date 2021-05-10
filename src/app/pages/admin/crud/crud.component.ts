@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { ConfirmationService } from 'primeng/api';
 import { MessageService } from 'primeng/api';
@@ -30,12 +31,17 @@ export class CrudComponent implements OnInit {
 
   statuses: any[];
 
-  constructor(private productService: ProductService, private messageService: MessageService, private confirmationService: ConfirmationService) { }
+  constructor(
+      private productService: ProductService, 
+      private messageService: MessageService, 
+      private confirmationService: ConfirmationService,
+      private router:Router,
+      ) { }
 
   ngOnInit() {
       
       this.productService.getProducts().then(data => this.products = data);
-
+        
       this.statuses = [
           {label: 'ENSTOCK', value: 'enstock'},
           {label: 'STOCKBAJO', value: 'stockbajo'},
@@ -125,6 +131,16 @@ export class CrudComponent implements OnInit {
           id += chars.charAt(Math.floor(Math.random() * chars.length));
       }
       return id;
+  }
+
+  redirect(){
+    this.router.navigateByUrl('').then(e => {
+        if (e) {
+          console.log("Navigation is successful!");
+        } else {
+          console.log("Navigation has failed!");
+        }
+      });
   }
 
 }
