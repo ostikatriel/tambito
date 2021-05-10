@@ -4,11 +4,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Dependencias principales
 
-npm install primeng --save
-npm install primeicons --save
-npm install @angular/animations --save
-npm install @angular/cdk --save
-npm install primeflex --save
+#### npm install primeng --save
+#### npm install primeicons --save
+#### npm install @angular/animations --save
+#### npm install @angular/cdk --save
+#### npm install primeflex --save
+#### npm i --save export-from-json
 
 ## Icons
 

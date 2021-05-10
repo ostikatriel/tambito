@@ -6,7 +6,7 @@ import { MessageService } from 'primeng/api';
 import { Product } from 'src/app/domains/product';
 import { ProductService } from 'src/app/services/product.service';
 
-import exportFromJSON from 'export-from-json'
+import exportFromJSON from 'export-from-json';
 
 @Component({
     selector: 'app-crud',
@@ -103,8 +103,8 @@ export class CrudComponent implements OnInit {
             }
             else {
                 this.product.id = this.createId();
-                this.product.code=this.createId();
-                this.product.rating=5;
+                this.product.code = this.createId();
+                this.product.rating = 5;
                 this.product.image = 'product-placeholder.svg';
                 this.products.push(this.product);
                 this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Product Created', life: 3000 });
