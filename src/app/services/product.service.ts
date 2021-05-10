@@ -45,15 +45,15 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
+  getProducts() {
+    return this.http.get<any>('assets/data/products.json')
+    .toPromise()
+    .then(res => <Product[]>res.data)
+    .then(data => { return data; });
+}
+
   getProductsSmall() {
       return this.http.get<any>('assets/showcase/data/products-small.json')
-      .toPromise()
-      .then(res => <Product[]>res.data)
-      .then(data => { return data; });
-  }
-
-  getProducts() {
-      return this.http.get<any>('assets/data/products.json')
       .toPromise()
       .then(res => <Product[]>res.data)
       .then(data => { return data; });
@@ -112,4 +112,5 @@ export class ProductService {
   generateRating() {
       return Math.floor(Math.random() * Math.floor(5)+1);
   }
+
 }

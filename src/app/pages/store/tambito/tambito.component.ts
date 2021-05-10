@@ -25,6 +25,7 @@ export class TambitoComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
+       
       this.productService.getProducts().then(data => this.products = data);
       /*
               this.products = [

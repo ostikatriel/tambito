@@ -33,6 +33,7 @@ export class CrudComponent implements OnInit {
   constructor(private productService: ProductService, private messageService: MessageService, private confirmationService: ConfirmationService) { }
 
   ngOnInit() {
+      
       this.productService.getProducts().then(data => this.products = data);
 
       this.statuses = [
@@ -54,9 +55,9 @@ export class CrudComponent implements OnInit {
           header: 'Confirm',
           icon: 'pi pi-exclamation-triangle',
           accept: () => {
-              this.products = this.products.filter(val => !this.selectedProducts.includes(val));
-              this.selectedProducts = null;
-              this.messageService.add({severity:'success', summary: 'Successful', detail: 'Products Deleted', life: 3000});
+            this.products = this.products.filter(val => !this.selectedProducts.includes(val));
+            this.selectedProducts = null;
+            this.messageService.add({severity:'success', summary: 'Successful', detail: 'Products Deleted', life: 3000});
           }
       });
   }
@@ -72,7 +73,7 @@ export class CrudComponent implements OnInit {
           header: 'Confirm',
           icon: 'pi pi-exclamation-triangle',
           accept: () => {
-              this.products = this.products.filter(val => val.id !== product.id);
+            this.products = this.products.filter(val => val.id !== product.id);
               this.product = {};
               this.messageService.add({severity:'success', summary: 'Successful', detail: 'Product Deleted', life: 3000});
           }
@@ -89,7 +90,7 @@ export class CrudComponent implements OnInit {
 
       if (this.product.name.trim()) {
           if (this.product.id) {
-              this.products[this.findIndexById(this.product.id)] = this.product;                
+            this.products[this.findIndexById(this.product.id)] = this.product;                
               this.messageService.add({severity:'success', summary: 'Successful', detail: 'Product Updated', life: 3000});
           }
           else {
