@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "name": "Arroz",
+            "price": 3,
+            "quantity": 20,
+            "inventoryStatus": "enstock",
+            "category": "Fitness",
+            "description": "Anaranjado",
+            "id": "fvmPr",
+            "code": "vpuh0",
+            "rating": 5,
+            "image": "product-placeholder.svg"
+        },
+        {
+            "name": "Arroz",
+            "description": "Verde",
+            "inventoryStatus": "enstock",
+            "price": 3.5,
+            "quantity": 20,
+            "category": "Fitness",
+            "id": "We4KN",
+            "code": "Xv09k",
+            "rating": 5,
+            "image": "product-placeholder.svg"
+        }
+    ]
+}
