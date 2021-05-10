@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1620671086046,
+  "timestamp": 1620682867535,
   "index": "/tambito/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/tambito/favicon.ico",
         "/tambito/index.html",
-        "/tambito/main.57ad1822ad99abcfc3ac.js",
+        "/tambito/main.d6d404b1ac15c8a54b53.js",
         "/tambito/manifest.webmanifest",
         "/tambito/polyfills.8c151b8375e767ff858f.js",
         "/tambito/runtime.0e49e2b53282f40c8925.js",
@@ -29,8 +29,8 @@
         "ignoreVary": true
       },
       "urls": [
+        "/tambito/assets/data/product/products.json",
         "/tambito/assets/data/products.json",
-        "/tambito/assets/data/products/products.json",
         "/tambito/assets/icons/store.svg",
         "/tambito/assets/icons/store1.svg",
         "/tambito/assets/icons/store3.svg",
@@ -48,8 +48,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "/tambito/assets/data/product/products.json": "2046b6717672b4e5462b89f36a7e7e2cdd992f46",
     "/tambito/assets/data/products.json": "301592157acc3dc5261407d58a4d0656b38e6f8b",
-    "/tambito/assets/data/products/products.json": "9209291b18a6f505d9cc58072e87f065c77f8f3b",
     "/tambito/assets/icons/store.svg": "f1575d553d6a23e3ff1233ed956dd78c994d12b5",
     "/tambito/assets/icons/store1.svg": "67ebe7f6ce99b13d55ca338a2a45a2a2442aee24",
     "/tambito/assets/icons/store3.svg": "0a98c0a87877d04fb59ebe7a30947bf2fd1fa4e6",
@@ -58,8 +58,8 @@
     "/tambito/color.6441e63a57ccc5105bad.png": "ff4c4bcb2207891b292f544edb4da9d2df5d45cf",
     "/tambito/favicon.ico": "ed8074622cb3dac3bc5176ad7198a79077104ba1",
     "/tambito/hue.f8505bd4d6f3e3aa435b.png": "f81ae627637a684614aa726e206c73ce099a01fd",
-    "/tambito/index.html": "a53567a58c61a26ff17f8baeaa886fab77f5b053",
-    "/tambito/main.57ad1822ad99abcfc3ac.js": "7645a4dd9ea2ae45b384790c02c6475234d495a4",
+    "/tambito/index.html": "e79e6af016bef0b32ebc8f41908e00227c91ed3c",
+    "/tambito/main.d6d404b1ac15c8a54b53.js": "261e82cbf4341e60568c33782b14d4e9b2565597",
     "/tambito/manifest.webmanifest": "196092fb92b02c4774758cbce0d4dbe072427d31",
     "/tambito/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "/tambito/primeicons.3a0d4a58da62cf7c55bb.ttf": "13889b5e1915891dd548d6b71c1cccddb469e13d",
