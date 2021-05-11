@@ -8,6 +8,7 @@ import {ButtonModule} from 'primeng/button';
 import {DropdownModule} from 'primeng/dropdown';
 import {RatingModule} from 'primeng/rating';
 import {InputTextModule} from 'primeng/inputtext';
+import {ToolbarModule} from 'primeng/toolbar';
 import { FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     DropdownModule,
     RatingModule,
     InputTextModule,
+    ToolbarModule,
     
     HttpClientModule,
     FormsModule,

@@ -1,40 +1,100 @@
 {
     "data": [
         {
-            "name": "Arroz",
+            "name": "Arroz 1kg",
             "price": 3,
             "quantity": 20,
             "inventoryStatus": "enstock",
-            "category": "Fitness",
-            "description": "Anaranjado",
+            "category": "Abarrotes",
+            "description": "Saco Anaranjado",
             "id": "fvmPr",
             "code": "vpuh0",
             "rating": 5,
             "image": "product-placeholder.svg"
         },
         {
-            "name": "Arroz",
-            "description": "Verde",
+            "name": "Arroz 1kg",
+            "description": "Saco Verde",
             "inventoryStatus": "enstock",
             "price": 3.5,
             "quantity": 20,
-            "category": "Fitness",
+            "category": "Abarrotes",
             "id": "We4KN",
             "code": "Xv09k",
             "rating": 5,
             "image": "product-placeholder.svg"
         },
         {
-            "name": "Cielo",
-            "description": "Agua",
+            "name": "Agua Cielo",
             "inventoryStatus": "enstock",
+            "quantity": 20,
+            "category": "Bebidas",
+            "price": 3.5,
+            "id": "dRDcf",
+            "code": "hGhn6",
+            "rating": 5,
+            "image": "product-placeholder.svg",
+            "description": " 1Lt"
+        },
+        {
+            "name": "Agua Cielo",
+            "description": "Personal",
+            "inventoryStatus": "enstock",
+            "category": "Bebidas",
             "price": 1,
             "quantity": 20,
-            "category": "Fitness",
-            "id": "bWQBO",
-            "code": "fioQ7",
+            "id": "lBN3M",
+            "code": "2TvLv",
             "rating": 5,
             "image": "product-placeholder.svg"
+        },
+        {
+            "name": "Comida de Perro",
+            "inventoryStatus": "enstock",
+            "category": "Abarrotes",
+            "price": 4,
+            "quantity": 20,
+            "description": "1kg",
+            "id": "3uAjd",
+            "code": "zwqyd",
+            "rating": 5,
+            "image": "product-placeholder.svg"
+        },
+        {
+            "name": "Gaseosa Kola Real",
+            "description": "Personal",
+            "category": "Bebidas",
+            "price": 1,
+            "quantity": 20,
+            "id": "IeESw",
+            "code": "j3rCf",
+            "rating": 5,
+            "image": "product-placeholder.svg",
+            "inventoryStatus": "enstock"
+        },
+        {
+            "name": "Vino",
+            "price": 15.5,
+            "quantity": 20,
+            "category": "Bebidas",
+            "inventoryStatus": "enstock",
+            "description": "Cualquiera",
+            "id": "bYx0w",
+            "code": "tXV5B",
+            "rating": 5,
+            "image": "product-placeholder.svg"
+        },
+        {
+            "name": "Vainilla Grande",
+            "description": "Galleta",
+            "inventoryStatus": "enstock",
+            "id": "ScgwQ",
+            "code": "IH4tI",
+            "rating": 5,
+            "image": "product-placeholder.svg",
+            "price": 1.2,
+            "quantity": 20,
+            "category": "Abarrotes"
         }
     ]
 }

@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/domains/product';
 import { ProductService } from 'src/app/services/product.service';
 import { SelectItem } from 'primeng/api';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tambito',
@@ -22,7 +23,10 @@ export class TambitoComponent implements OnInit {
 
   sortField: string;
 
-  constructor(private productService: ProductService) { }
+  constructor(
+    private productService: ProductService,
+    private router: Router
+    ) { }
 
   ngOnInit() {
 
@@ -62,5 +66,15 @@ export class TambitoComponent implements OnInit {
           this.sortField = value;
       }
   }
+
+  ir() {
+    this.router.navigateByUrl('crud').then(e => {
+        if (e) {
+            console.log("La navegación es exitosa!");
+        } else {
+            console.log("La navegación ha fallado!");
+        }
+    });
+}
 
 }

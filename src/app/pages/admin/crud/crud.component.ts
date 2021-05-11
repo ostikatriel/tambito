@@ -11,33 +11,7 @@ import exportFromJSON from 'export-from-json';
 @Component({
     selector: 'app-crud',
     templateUrl: './crud.component.html',
-    styles: [`
-  :host ::ng-deep .p-dialog .product-image {
-      width: 150px;
-      margin: 0 auto 2rem auto;
-      display: block;
-  }
-  .product-badge {
-        border-radius: 2px;
-        padding: .25em .5rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 12px;
-        letter-spacing: .3px;
-    }
-    .product-badge.status-stockbajo {
-        background: #feedaf;
-        color: #8a5340;
-    }
-    .product-badge.status-enstock {
-        background: #c8e6c9;
-        color: #256029;
-    }
-    .product-badge.status-agotado {
-        background: #ffcdd2;
-        color: #c63737;
-    }
-`]
+    styleUrls: ['./crud.component.scss']
 })
 export class CrudComponent implements OnInit {
 
@@ -69,6 +43,7 @@ export class CrudComponent implements OnInit {
             { label: 'STOCKBAJO', value: 'stockbajo' },
             { label: 'AGOTADO', value: 'agotado' }
         ];
+        
     }
 
     openNew() {
@@ -116,7 +91,8 @@ export class CrudComponent implements OnInit {
     saveProduct() {
         this.submitted = true;
 
-        if (this.product.name.trim()) {
+        if (this.product.name.trim() && this.product.inventoryStatus.trim()
+            && this.product.price.toString().trim()) {
             if (this.product.id) {
                 this.products[this.findIndexById(this.product.id)] = this.product;
                 this.messageService.add({ severity: 'success', summary: 'Exitoso', detail: 'Producto Actualizado', life: 3000 });
@@ -162,8 +138,7 @@ export class CrudComponent implements OnInit {
         const data = {
             "data": this.products
         }
-        //const data = this.products;
-        //const data = [{ foo: 'foo'}, { bar: 'bar' }];
+
         const fileName = 'products';
         const exportType = 'json';
 
