@@ -47,7 +47,11 @@ export class CrudComponent implements OnInit {
     }
 
     openNew() {
-        this.product = {};
+        this.product = {
+            'price': 0,
+            'quantity': 1,
+            'inventoryStatus': 'enstock'
+        };
         this.submitted = false;
         this.productDialog = true;
     }
