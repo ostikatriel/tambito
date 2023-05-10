@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1683486881270,
+  "timestamp": 1683685740641,
   "index": "/tambito/index.html",
   "assetGroups": [
     {
@@ -48,7 +48,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/tambito/assets/data/product/products.json": "9f320f57d3d70552dcc813cb5991867e01c2f6f9",
+    "/tambito/assets/data/product/products.json": "80250bf0c3c3120db7c94bed8b21ccbd925f9780",
     "/tambito/assets/data/products.json": "301592157acc3dc5261407d58a4d0656b38e6f8b",
     "/tambito/assets/icons/store.svg": "f1575d553d6a23e3ff1233ed956dd78c994d12b5",
     "/tambito/assets/icons/store1.svg": "67ebe7f6ce99b13d55ca338a2a45a2a2442aee24",
