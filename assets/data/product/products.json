@@ -3,7 +3,7 @@
         {
             "name": "Rellenitas",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 0.6,
             "id": "X8N1V",
             "code": "HNX7V",
             "rating": 5,
@@ -13,7 +13,7 @@
         {
             "name": "Casino",
             "description": "Galleta pequeña",
-            "price": 0,
+            "price": 1,
             "inventoryStatus": "enstock",
             "id": "6aKWi",
             "code": "mpef5",
@@ -24,7 +24,7 @@
             "name": "Chocman Doble Manjar",
             "description": "Biscocho relleno",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 1.2,
             "id": "QFjFS",
             "code": "Q6OFa",
             "rating": 5,
@@ -34,7 +34,7 @@
             "name": "Lucky Strike",
             "description": "Cigarro solo por unidad",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 1.5,
             "id": "Gqmef",
             "code": "0FQ9e",
             "rating": 5,
@@ -43,7 +43,7 @@
         {
             "name": "Golden Beach",
             "description": "Cigarro sale por unidad",
-            "price": 0,
+            "price": 0.5,
             "inventoryStatus": "enstock",
             "id": "78Z6z",
             "code": "Jpi8h",
@@ -54,7 +54,7 @@
             "name": "Katabom",
             "description": "Chicle doble centro liquido ",
             "inventoryStatus": "enstock",
-            "price": 0.2,
+            "price": 0.1,
             "id": "gFAk9",
             "code": "uHoQN",
             "rating": 5,
@@ -64,7 +64,7 @@
             "name": "Globo pop",
             "description": "Chupetin",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 0.6,
             "id": "lyOt3",
             "code": "T2wyw",
             "rating": 5,
@@ -74,7 +74,7 @@
             "name": "Te Canela y Clavo",
             "description": "Filtrante Herbi",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 0.1,
             "id": "ow6Im",
             "code": "cUQNJ",
             "rating": 5,
@@ -84,7 +84,7 @@
             "name": "Manzanilla",
             "description": "Filtrante Herbi",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 0.1,
             "id": "2WdC7",
             "code": "UVhy6",
             "rating": 5,
@@ -94,7 +94,7 @@
             "name": "Ani",
             "description": "Filtrante Herbi",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 0.1,
             "quantity": null,
             "id": "yaEI7",
             "code": "c7i3L",
@@ -105,7 +105,7 @@
             "name": "Full",
             "description": "Masti Crunch",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 0.5,
             "id": "hA5xe",
             "code": "4scTv",
             "rating": 5,
@@ -115,7 +115,7 @@
             "name": "SodaV",
             "description": "Galleta pequeña",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 0.5,
             "id": "S0Kpi",
             "code": "jkFuY",
             "rating": 5,
@@ -125,7 +125,7 @@
             "name": "Cinchin",
             "description": "Chocolate con Leche confitado, 16g",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 1,
             "id": "7p2wZ",
             "code": "zYKBd",
             "rating": 5,
@@ -135,7 +135,7 @@
             "name": "Bon Ami",
             "description": "Caramelo Ambrosoli",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 0.1,
             "id": "RG2eS",
             "code": "LoOO6",
             "rating": 5,
@@ -154,7 +154,7 @@
         {
             "name": "Babysec G",
             "description": "Pañales desechables",
-            "price": 0,
+            "price": 0.8,
             "inventoryStatus": "enstock",
             "id": "du7Ym",
             "code": "lxUIx",
@@ -164,7 +164,7 @@
         {
             "name": "Babysec XXG",
             "description": "Pañales desechables XXG",
-            "price": 0,
+            "price": 1,
             "inventoryStatus": "enstock",
             "id": "2ZMad",
             "code": "Pow8W",
@@ -175,7 +175,7 @@
             "name": "Arroz Papay",
             "description": "Graneado perfecto",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 4,
             "id": "aDpk1",
             "code": "aLCFh",
             "rating": 5,
@@ -183,9 +183,9 @@
         },
         {
             "name": "Platos de plastico",
-            "description": "Solo sale por paquete",
+            "description": "Solo sale por paquete, 25 platos",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 5,
             "id": "HN2VD",
             "code": "cLTGt",
             "rating": 5,
@@ -195,7 +195,7 @@
             "name": "Papel Higiénico Suave",
             "description": "Doble Hoja, 4 rollos",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 4.5,
             "id": "9lrCP",
             "code": "wA4nv",
             "rating": 5,
@@ -225,7 +225,7 @@
             "name": "Servilleta Esencial",
             "description": "Dobladas en 4",
             "inventoryStatus": "enstock",
-            "price": 0,
+            "price": 1.2,
             "id": "nwm1I",
             "code": "ZHRNv",
             "rating": 5,
@@ -296,28 +296,6 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
-            "quantity": 1,
-            "inventoryStatus": "enstock",
-            "name": "Gaseosa Inca Kola",
-            "description": "Botella de 2.5L retornable",
-            "id": "u6MYR",
-            "code": "wxpr2",
-            "rating": 5,
-            "image": "product-placeholder.svg"
-        },
-        {
-            "price": 0,
-            "quantity": 1,
-            "inventoryStatus": "enstock",
-            "name": "Gaseosa Coca Cola",
-            "description": "Botella de 2.5L retornable",
-            "id": "1F46I",
-            "code": "jOLaB",
-            "rating": 5,
-            "image": "product-placeholder.svg"
-        },
-        {
             "price": 11,
             "quantity": 1,
             "inventoryStatus": "enstock",
@@ -384,18 +362,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
-            "quantity": 1,
-            "inventoryStatus": "enstock",
-            "name": "Arrozo El churre del Norte",
-            "description": "El precio es por kilo",
-            "id": "zT3vA",
-            "code": "qmCfN",
-            "rating": 5,
-            "image": "product-placeholder.svg"
-        },
-        {
-            "price": 1.5,
+            "price": 1.8,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Detergente Sapolio",
@@ -428,18 +395,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 6.5,
-            "quantity": 1,
-            "inventoryStatus": "enstock",
-            "name": "Detergente Opal Ultra",
-            "description": "Bolsa de 480g",
-            "id": "rD1Em",
-            "code": "xCc7N",
-            "rating": 5,
-            "image": "product-placeholder.svg"
-        },
-        {
-            "price": 0,
+            "price": 8.5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Detergente Opal Ultra",
@@ -483,7 +439,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Cañas de plasticos",
@@ -527,7 +483,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 0.9,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Babysec XG",
@@ -538,7 +494,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 0.3,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Hongo y Laurel",
@@ -548,7 +504,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Canela y Clavo Grande",
@@ -559,7 +515,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 0.5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Canela y Clavo Mediano",
@@ -570,7 +526,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 0.3,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Bicarbonato",
@@ -581,7 +537,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 2,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Sal Marina",
@@ -592,7 +548,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 4,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Azúcar Casa Grande",
@@ -669,7 +625,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 2,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Poet",
@@ -691,7 +647,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Vela Virgen del rosario",
@@ -702,18 +658,18 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 0.8,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Vela Luz Radiente",
-            "description": "Precio por unidad",
+            "description": "Precio por unidad (0.80 o 1.00)",
             "id": "0NC3p",
             "code": "g0HHx",
             "rating": 5,
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Rexona Men",
@@ -768,7 +724,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1.2,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Downy",
@@ -779,7 +735,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1.3,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Shampoo Sedal Rosado",
@@ -790,7 +746,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1.3,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Shampoo Sedal Blanco",
@@ -801,7 +757,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 1.2,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Shampoo Head&Shoulders",
@@ -812,7 +768,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1.2,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Paño absorbente Virutex",
@@ -856,7 +812,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Pantene",
@@ -867,7 +823,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Konzil",
@@ -878,7 +834,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Bonawell",
@@ -889,7 +845,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Estelita",
@@ -900,7 +856,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1.5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Nutribela Keratina",
@@ -922,7 +878,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 4,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Gillette Prestobarba",
@@ -966,7 +922,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 1.2,
+            "price": 1.5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Milo",
@@ -988,7 +944,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1.5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Café Nescafe",
@@ -999,7 +955,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1.3,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Café Kirma",
@@ -1053,7 +1009,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Jabón Heno de Pravia",
@@ -1064,7 +1020,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 3.5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Cepillo Oral B",
@@ -2891,7 +2847,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1.5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Vinagre Blanco del Firme",
@@ -3001,7 +2957,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 3.5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Gelatina Livini",
@@ -3012,7 +2968,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Gelatina Universal",
@@ -3078,7 +3034,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1.5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Chocolate Estrella del Cusco",
@@ -3089,7 +3045,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 2,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Chocolate Sol del Cusco",
@@ -3243,7 +3199,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 18,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Tabernero La Botija",
@@ -3309,7 +3265,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 16,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Noche Buena",
@@ -3762,7 +3718,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 3,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Quita Esmalte Limon Mediano",
@@ -3803,7 +3759,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Quita Esmalte Ariana Pequeño",
@@ -3867,7 +3823,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Folder Vinifan",
@@ -3878,7 +3834,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Portafolio de Carton",
@@ -3899,7 +3855,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Folder Crema A4",
@@ -3910,7 +3866,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Sobre Manila Gallo",
@@ -3921,7 +3877,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 0.5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Fasteners de Metal Artesco",
@@ -3931,7 +3887,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 0.5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Papel de Regalo",
@@ -3941,7 +3897,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 0.5,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Papel Lustre",
@@ -3973,7 +3929,7 @@
             "image": "product-placeholder.svg"
         },
         {
-            "price": 0,
+            "price": 1,
             "quantity": 1,
             "inventoryStatus": "enstock",
             "name": "Papel Metalico",
